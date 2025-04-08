@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Game.Run(); // 구동시에 게임 시작
         }
     }
 }

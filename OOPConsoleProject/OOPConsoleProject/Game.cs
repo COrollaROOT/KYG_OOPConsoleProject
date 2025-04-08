@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace OOPConsoleProject
 {
-    class Game
+    public static class Game // 게임 시
     {
+
+
+        public static void Run() // 구동
+        {
+
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPConsoleProject
 {
-    class BaseScene
+    public static class BaseScene
     {
     }
 }
