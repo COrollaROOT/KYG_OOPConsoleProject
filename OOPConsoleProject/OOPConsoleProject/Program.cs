@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Game.Start(); // 시작
+            //Game.Start(); // 시작
             Game.Run(); // 구동
-            Game.End(); // 종료
+           //Game.End(); // 종료
         }
     }
 }
