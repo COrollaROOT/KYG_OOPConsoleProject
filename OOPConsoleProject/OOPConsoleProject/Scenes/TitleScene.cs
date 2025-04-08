@@ -13,13 +13,13 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
             Console.WriteLine("▒§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§▒");
             Console.WriteLine("▒♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣▒");
-            Console.WriteLine("▒▒▒♣♣♣♣※※  Wild Jungle  ※※♣♣♣♣▒▒▒");
-            Console.WriteLine("▒▒▒♣♣♣♣※※    Survive    ※※♣♣♣♣▒▒▒");
+            Console.WriteLine("▒▒▒♣♣♣♣※※ One Step Into ※※♣♣♣♣▒▒▒");
+            Console.WriteLine("▒▒▒♣♣♣♣※※   the  Wild   ※※♣♣♣♣▒▒▒");
             Console.WriteLine("▒♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣▒");
             Console.WriteLine("▒§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§▒");
             Console.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
             Console.WriteLine();
-            Console.Write("정글 속으로 들어가시려면\n아무키나 누르시오...");
+            Console.Write("야생 속으로 들어가시려면\n아무키나 누르시오...");
         }
 
         public override void Input() // 입력 처리
