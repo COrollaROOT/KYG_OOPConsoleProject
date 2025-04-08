@@ -15,6 +15,9 @@ namespace OOPConsoleProject
 
         public static void Run() // 구동
         {
+
+            Start(); // 시작
+
             while (gameOver == false) // 게임 오버가 아니면 계속 반복
             {
                 curScene.Render();
@@ -22,6 +25,21 @@ namespace OOPConsoleProject
                 curScene.Update();
                 curScene.Result();
             }
+
+            End(); // 종료
+        }
+
+        private static void Start() // 게임 초기 설정 작업
+        {
+            gameOver = false; // 게임시작시 게임오버가 거짓
+
+            sceneDic = new Dictionary<string, BaseScene>(); // 씬 설정
+
+        }
+
+        private static void End() // 게임 마무리 설정 작업
+        {
+
         }
     }
 }
