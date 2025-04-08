@@ -25,9 +25,13 @@ namespace OOPConsoleProject
                 
                 Console.Clear(); // 전에 있던 콘솔창 지우기
                 nowScene.Render();
+                Console.WriteLine(); // 줄 바꿈 추가
                 nowScene.Input();
+                Console.WriteLine();
                 nowScene.Update();
+                Console.WriteLine();
                 nowScene.Result();
+
             }
 
             End(); // 종료

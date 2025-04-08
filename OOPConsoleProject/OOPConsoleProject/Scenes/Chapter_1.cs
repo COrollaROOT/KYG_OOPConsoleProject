@@ -13,10 +13,10 @@ namespace OOPConsoleProject.Scenes
 
         public override void Render()
         {
-            Console.WriteLine("아아ㅏㅁ나안망");
+            Console.WriteLine("1");
             Console.WriteLine();
             Console.Write("선택지를 입력하세요 : ");
-            Console.WriteLine(" <- 이전, -> 다음");
+            Console.WriteLine(" <- : 이전 , -> : 다음");
         }
 
         public override void Input()
@@ -34,10 +34,12 @@ namespace OOPConsoleProject.Scenes
             switch (input)
             {
                 case ConsoleKey.RightArrow:
+                    Util.PushKey("다음 으로 이동합니다.");
                     Game.ChangeScene("Chapter_2");
                     break;
 
                 case ConsoleKey.LeftArrow:
+                    Util.PushKey("이전 으로 이동합니다.");
                     Game.ChangeScene("Title");
                     break;
             }

@@ -33,8 +33,8 @@ namespace OOPConsoleProject.Scenes
         }
 
         public override void Result() // 결과 처리
-        {
-            Game.ChangeScene("Chapter_1"); // 타이틀에서 아무키 누름면 다음 씬으로 이동
+        { 
+            Game.ChangeScene("Chapter_1"); // 타이틀에서 아무키름면 다음 씬으로 이동
         }
     }
 }
