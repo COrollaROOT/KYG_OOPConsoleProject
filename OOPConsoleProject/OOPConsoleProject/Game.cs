@@ -21,6 +21,7 @@ namespace OOPConsoleProject
 
             while (gameOver == false) // 게임 오버가 아니면 계속 반복
             {
+                Console.Clear(); // 전에 있던 콘솔창 지우기
                 nowScene.Render();
                 nowScene.Input();
                 nowScene.Update();

@@ -24,7 +24,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Input() // 입력 처리
         {
-            Console.ReadKey();
+            Console.ReadKey(true); // 입력키 안보이게 하기위해 true
         }
 
         public override void Update() // 업데이트 처리
