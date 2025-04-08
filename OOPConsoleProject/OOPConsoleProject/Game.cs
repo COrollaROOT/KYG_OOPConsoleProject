@@ -13,6 +13,11 @@ namespace OOPConsoleProject
         private static Dictionary<string, BaseScene> sceneDic; // 베이스 씬 여러게 있는 씬 사전
         private static BaseScene nowScene; // 씬 변경되기 때문에 현재씬 구동
 
+        private static Player player;
+
+        public static Player Player { get { return player; } }
+
+
         private static bool gameOver; // 게임 오버 (참/거짓)
 
         public static void Run() // 구동
@@ -46,6 +51,8 @@ namespace OOPConsoleProject
         {
             gameOver = false; // 게임시작시 게임오버가 거짓
 
+            player = new Player();
+
             Console.CursorVisible = false;
             sceneDic = new Dictionary<string, BaseScene>(); // 씬 설정
             sceneDic.Add("Title", new TitleScene()); // 씬 사전에 "Title" 이라는 씬 추가
@@ -55,6 +62,8 @@ namespace OOPConsoleProject
 
 
             nowScene = sceneDic["Title"]; // 시작시 타이틀씬으로 시작
+
+            player = new Player(); // 게임 시작시 플레이어 생성
         }
 
         private static void End() // 게임 마무리 설정 작업

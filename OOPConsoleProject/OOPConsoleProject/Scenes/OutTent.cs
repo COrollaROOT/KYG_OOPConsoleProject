@@ -31,16 +31,19 @@ namespace OOPConsoleProject.Scenes
             {
                 for (int x = 0; x < map.GetLength(1); x++)
                 {
-                    map[y, x] = mapData[y][x] ==  '#'  ? false : true;
-                    
+                    map[y, x] = mapData[y][x] == '#' ? false : true;
+
                 }
             }
+
+            Game.Player.position = new Vector0(5, 5); // 플레잉어 위치 선정
         }
 
 
         public override void Render()
         {
-            PrintMap();
+            PrintMap(); // 맵 그려준다
+            Game.Player.Print(); // 플레이어 그려준다
         }
 
         public override void Input() // 키를 입력받아
@@ -50,7 +53,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Update() // 입력받은 키로 움직임 구성
         {
-
+            Game.Player.Move(input); // 입력받은 키로 플레이어 움직이게 한다
         }
 
         public override void Result()
