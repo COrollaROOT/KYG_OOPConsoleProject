@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,6 +22,7 @@ namespace OOPConsoleProject
 
             while (gameOver == false) // 게임 오버가 아니면 계속 반복
             {
+                
                 Console.Clear(); // 전에 있던 콘솔창 지우기
                 nowScene.Render();
                 nowScene.Input();
@@ -31,12 +33,22 @@ namespace OOPConsoleProject
             End(); // 종료
         }
 
+        public static void ChangeScene(string sceneName) // 씬을 바꿔주는 기능 구현
+        {
+            nowScene = sceneDic[sceneName]; // 해당이름 씬으로 넘어가기 위해
+        }
+
         private static void Start() // 게임 초기 설정 작업
         {
             gameOver = false; // 게임시작시 게임오버가 거짓
 
+            Console.CursorVisible = false;
             sceneDic = new Dictionary<string, BaseScene>(); // 씬 설정
             sceneDic.Add("Title", new TitleScene()); // 씬 사전에 "Title" 이라는 씬 추가
+            sceneDic.Add("Chapter_1", new Chapter_1());
+            sceneDic.Add("Chapter_2", new Chapter_2());
+
+
 
             nowScene = sceneDic["Title"]; // 시작시 타이틀씬으로 시작
         }

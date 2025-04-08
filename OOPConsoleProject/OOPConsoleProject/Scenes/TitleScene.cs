@@ -19,7 +19,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("▒§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§▒");
             Console.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
             Console.WriteLine();
-            Console.WriteLine("정글 속으로 들어가시려면\n아무키나 누르시오...");
+            Console.Write("정글 속으로 들어가시려면\n아무키나 누르시오...");
         }
 
         public override void Input() // 입력 처리
@@ -34,7 +34,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Result() // 결과 처리
         {
-            
+            Game.ChangeScene("Chapter_1"); // 타이틀에서 아무키 누름면 다음 씬으로 이동
         }
     }
 }
