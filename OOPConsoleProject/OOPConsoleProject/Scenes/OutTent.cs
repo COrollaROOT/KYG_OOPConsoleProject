@@ -17,16 +17,16 @@ namespace OOPConsoleProject.Scenes
         {
             mapData = new string[]
                 {
-                    "######################",
-                    "# ###    #  ##     ###",
-                    "#   #      ###   #####",
-                    "#   ###     #        #",
-                    "#       ##  # # ######",
-                    "# #  ####     #    ###",
-                    "######################",
+                    "########",
+                    "#      #",
+                    "#      #",
+                    "#      #",
+                    "#      #",
+                    "########"
+
                 };
 
-            map = new bool[7, 22];
+            map = new bool[6, 8];
             for (int y = 0; y < map.GetLength(0); y++)
             {
                 for (int x = 0; x < map.GetLength(1); x++)
@@ -36,7 +36,8 @@ namespace OOPConsoleProject.Scenes
                 }
             }
 
-            Game.Player.position = new Vector0(5, 5); // 플레잉어 위치 선정
+            Game.Player.position = new Vector0(1, 1); // 플레잉어 위치 선정
+            Game.Player.map = map;
         }
 
 
@@ -71,8 +72,10 @@ namespace OOPConsoleProject.Scenes
                     if (map[y, x] == true)
                     {
                         Console.Write(' '); // 갈수 있는 지형 
-                        
+
                     }
+
+                   
 
                     else
                     {

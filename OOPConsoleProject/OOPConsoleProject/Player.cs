@@ -9,6 +9,7 @@ namespace OOPConsoleProject
     public class Player // 플레이어는 포지션을 갖고 있는다
     {
         public Vector0 position;
+        public bool[,] map;
 
         public void Print()
         {
@@ -20,20 +21,28 @@ namespace OOPConsoleProject
 
         public void Move(ConsoleKey input) // 플레이어 움직임 구현
         {
+
+            Vector0 targetPos = position;
+
             switch (input) // 입력받는 키로 움직임
             {
                 case ConsoleKey.UpArrow:
-                    position.y--;
+                    targetPos.y--;
                     break;
                 case ConsoleKey.DownArrow:
-                    position.y++;
+                    targetPos.y++;
                     break;
                 case ConsoleKey.LeftArrow:
-                    position.x--;
+                    targetPos.x--;
                     break;
                 case ConsoleKey.RightArrow:
-                    position.x++;
+                    targetPos.x++;
                     break;
+            }
+
+            if (map[targetPos.y, targetPos.x] == true)
+            {
+                position = targetPos;
             }
         }
     }

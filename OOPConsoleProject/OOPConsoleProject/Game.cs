@@ -30,9 +30,9 @@ namespace OOPConsoleProject
                 
                 Console.Clear(); // 전에 있던 콘솔창 지우기
                 nowScene.Render();
-                Console.WriteLine(); // 줄 바꿈 추가
+                
                 nowScene.Input();
-                Console.WriteLine();
+                Console.WriteLine(); // 줄 바꿈 추가
                 nowScene.Update();
                 Console.WriteLine();
                 nowScene.Result();
@@ -51,7 +51,7 @@ namespace OOPConsoleProject
         {
             gameOver = false; // 게임시작시 게임오버가 거짓
 
-            player = new Player();
+            player = new Player();// 게임 시작시 플레이어 생성
 
             Console.CursorVisible = false;
             sceneDic = new Dictionary<string, BaseScene>(); // 씬 설정
@@ -60,10 +60,11 @@ namespace OOPConsoleProject
             sceneDic.Add("Chapter_2", new Chapter_2());
             sceneDic.Add("OutTentScene", new OutTentScene());
 
+            
 
             nowScene = sceneDic["Title"]; // 시작시 타이틀씬으로 시작
 
-            player = new Player(); // 게임 시작시 플레이어 생성
+            
         }
 
         private static void End() // 게임 마무리 설정 작업
