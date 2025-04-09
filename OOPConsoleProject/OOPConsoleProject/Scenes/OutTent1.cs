@@ -9,8 +9,10 @@ namespace OOPConsoleProject.Scenes
 {
     public class OutTent1 : OutTentScene
     {
+
         public OutTent1()
         {
+
             mapData = new string[]
                 {
                     "####################",
@@ -20,7 +22,10 @@ namespace OOPConsoleProject.Scenes
                     "#      #           #",
                     "####################"
 
+
                 };
+
+
 
             map = new bool[6, 20];
             for (int y = 0; y < map.GetLength(0); y++)
@@ -30,6 +35,7 @@ namespace OOPConsoleProject.Scenes
                     map[y, x] = mapData[y][x] == '#' ? false : true;
 
                 }
+                
             }
 
             gameObjects = new List<GameObject>();
@@ -38,6 +44,20 @@ namespace OOPConsoleProject.Scenes
 
             Game.Player.position = new Vector0(1, 1); // 플레잉어 위치 선정
             Game.Player.map = map;
+            
+
+
+        }
+
+        public override void Render()
+        {
+           
+            base.Render();
+            Console.WriteLine("저기에 음식(F)이 있네\n한번 가볼까?");
+            Console.WriteLine("방향키로 움직이시오");
+            Console.WriteLine("I : 인벤토리");
+
+
         }
     }
 }
