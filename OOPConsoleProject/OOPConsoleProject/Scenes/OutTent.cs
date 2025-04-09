@@ -68,7 +68,13 @@ namespace OOPConsoleProject.Scenes
 
         public override void Result()
         {
-
+            foreach (GameObject obj in gameObjects)
+            {
+                if (Game.Player.position == obj.position)
+                {
+                    obj.Interact(Game.Player);
+                }
+            }
         }
 
         private void PrintMap()
