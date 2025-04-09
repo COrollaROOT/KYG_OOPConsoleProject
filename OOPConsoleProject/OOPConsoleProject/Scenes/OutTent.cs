@@ -15,7 +15,7 @@ namespace OOPConsoleProject.Scenes
         protected string[] mapData;
         protected bool[,] map; // 맵 구성
 
-        protected List<GameObject> gameObjects;        
+        protected List<GameObject> gameObjects;
 
 
         public override void Render()
@@ -26,6 +26,9 @@ namespace OOPConsoleProject.Scenes
                 obj.Print(); // 게임 오브젝트 그려주기
             }
             Game.Player.Print(); // 플레이어 그려준다
+
+            Console.SetCursorPosition(0, map.GetLength(0) + 2); // 맵 생성시 
+            Game.Player.inventory.PrintALL(); // 인벤토리도 구현
         }
 
         public override void Input() // 키를 입력받아
@@ -45,6 +48,11 @@ namespace OOPConsoleProject.Scenes
                 if (Game.Player.position == obj.position)
                 {
                     obj.Interact(Game.Player);
+                    if (obj.oneOff == true)
+                    {
+                        gameObjects.Remove(obj); // 상호작용하면 지우기
+                    }
+                    break;
                 }
             }
         }

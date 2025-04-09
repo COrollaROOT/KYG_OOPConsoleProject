@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OOPConsoleProject.GameObjects;
+using OOPConsoleProject.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,7 +35,7 @@ namespace OOPConsoleProject.Scenes
 
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("Cave", 'C', new Vector0(1, 1)));
-            gameObjects.Add(new Place("Chapter_1_1", 'F', new Vector0(4, 1)));
+            gameObjects.Add(new Food('F', new Vector0(4, 1)));
 
 
 

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPConsoleProject
+namespace OOPConsoleProject.GameObjects
 {
     public class Place : GameObject
     {
         private string scene;
         public Place(string scene, char symbol, Vector0 position)
-            : base(ConsoleColor.Yellow, symbol, position)
+            : base(ConsoleColor.Yellow, symbol, position, false)
 
         {
             this.scene = scene;
