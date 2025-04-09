@@ -38,7 +38,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Update() // 입력받은 키로 움직임 구성
         {
-            Game.Player.Move(input); // 입력받은 키로 플레이어 움직이게 한다
+            Game.Player.Action(input); // 입력받은 키로 플레이어 움직이게 한다
         }
 
         public override void Result()

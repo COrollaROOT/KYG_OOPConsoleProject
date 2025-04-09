@@ -42,6 +42,23 @@ namespace OOPConsoleProject
             Console.ResetColor();
         }
 
+        public void Action(ConsoleKey input) // 플레이어 움직임 구현
+        {
+            switch (input)
+            {
+                case ConsoleKey.UpArrow:
+                case ConsoleKey.DownArrow:
+                case ConsoleKey.LeftArrow:
+                case ConsoleKey.RightArrow:
+                    Move(input);
+                    break;
+                case ConsoleKey.I:
+                    inventory.Open();
+                    break;
+            }
+        }
+
+
         public void Move(ConsoleKey input) // 플레이어 움직임 구현
         {
 
