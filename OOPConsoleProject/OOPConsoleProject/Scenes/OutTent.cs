@@ -17,16 +17,16 @@ namespace OOPConsoleProject.Scenes
         {
             mapData = new string[]
                 {
-                    "########",
-                    "#      #",
-                    "#      #",
-                    "#      #",
-                    "#      #",
-                    "########"
+                    "####################",
+                    "#  #       #    ####",
+                    "#  #   ### #  #    #",
+                    "#  ### #   ####### #",
+                    "#      #           #",
+                    "####################"
 
                 };
 
-            map = new bool[6, 8];
+            map = new bool[6, 20];
             for (int y = 0; y < map.GetLength(0); y++)
             {
                 for (int x = 0; x < map.GetLength(1); x++)
