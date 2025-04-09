@@ -64,6 +64,7 @@ namespace OOPConsoleProject
             sceneDic.Add("Chapter_1", new Chapter_1());
             sceneDic.Add("Chapter_2", new Chapter_2());
             sceneDic.Add("DiedScene1", new DiedScene1());
+            sceneDic.Add("DiedScene2", new DiedScene2());
             sceneDic.Add("Chapter_1_1", new Chapter_1_1());
             sceneDic.Add("Chapter_1_2", new Chapter_1_2());
             sceneDic.Add("FallTent", new FallTent());

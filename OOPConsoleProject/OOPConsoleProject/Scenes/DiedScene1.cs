@@ -12,11 +12,17 @@ namespace OOPConsoleProject.Scenes
 
         public override void Render()
         {
-            Console.WriteLine("꼬르륵...");            
+            Console.WriteLine("꼬르륵...");
+            Thread.Sleep(3500);
             Console.WriteLine("배가 고파...그때 나가서 먹을걸 구해올걸...");
+            Thread.Sleep(3500);
+            Console.WriteLine("엄마...아빠...흑...ㅡㅎ,");
+            Thread.Sleep(3500);
             Console.WriteLine("이대로... 나는... 짐승들의 밥이...ㄷ..ㅚ..게..ㅈ");
+            Thread.Sleep(3500);
             Console.WriteLine("당신은 굶어 죽었습니다");
-           
+            Thread.Sleep(3500);
+
             Console.WriteLine();
             
         }

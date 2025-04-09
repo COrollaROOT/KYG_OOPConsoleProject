@@ -17,7 +17,7 @@ namespace OOPConsoleProject.Scenes
         {
             Console.WriteLine("따스한 햇빛이 나의 눈을 덮는다\n나는 눈을 천천히 뜬다");
             Thread.Sleep(1500);
-            Console.WriteLine("눈앞엔 고요하고 드넓은 초원이 펼쳐져 있다.\n바람에 풀잎이 일렁이고\n멀리선 새소리가 아련하게 들린다.");
+            Console.WriteLine("눈앞엔 고요하고 드넓은 산림이 펼쳐져 있다.\n바람에 풀잎이 일렁이고\n멀리선 새소리가 아련하게 들린다.");
             Thread.Sleep(1500);
             Console.WriteLine("'캬~ 자리 하나는 기가 막히게 잡았단 말이지!'");
             Thread.Sleep(1500);

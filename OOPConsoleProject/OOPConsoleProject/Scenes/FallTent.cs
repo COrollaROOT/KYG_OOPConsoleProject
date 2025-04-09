@@ -51,5 +51,17 @@ namespace OOPConsoleProject.Scenes
 
             Game.Player.map = map;
         }
+
+        public override void Render()
+        {
+
+            base.Render();
+            Console.WriteLine("휴..겨우 살았네 큰일날뻔..");
+            Console.WriteLine("'여긴 어디지...일단 길을 찾아보자'\n'저기 동굴이(G)보이는걸'");
+            Console.WriteLine("방향키로 움직이시오");
+            Console.WriteLine("I : 인벤토리");
+
+
+        }
     }
 }
