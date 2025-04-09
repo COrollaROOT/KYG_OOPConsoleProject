@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace OOPConsoleProject.Scenes
 {
-    public class OutTent1 : OutTentScene
+    public class Cave : OutTentScene
     {
-        public OutTent1()
+        public Cave()
         {
             mapData = new string[]
                 {
                     "####################",
-                    "#  #       #    ####",
-                    "#  #   ### #  #    #",
-                    "#  ### #   ####### #",
-                    "#      #           #",
+                    "# #                #",
+                    "# #                #",
+                    "# #    ###  ###    #",
+                    "#     ##           #",
                     "####################"
 
                 };
@@ -32,11 +32,23 @@ namespace OOPConsoleProject.Scenes
             }
 
             gameObjects = new List<GameObject>();
-            gameObjects.Add(new Place("Chapter_1_1", 'T', new Vector0(1, 1)));
-            gameObjects.Add(new Place("Chapter_2", 'F', new Vector0(12, 2)));
+            gameObjects.Add(new Place("FallTent", 'C', new Vector0(1, 1)));
+            
 
-            Game.Player.position = new Vector0(1, 1); // 플레잉어 위치 선정
+
+
+        }
+
+        public override void Enter()
+        {
+            if (Game.prevSceneName == "FallTent")
+            {
+                Game.Player.position = new Vector0(1, 1); // 플레잉어 위치 선정
+            }
+
+
             Game.Player.map = map;
         }
     }
-}
+    }
+

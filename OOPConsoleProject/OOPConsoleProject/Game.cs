@@ -12,6 +12,7 @@ namespace OOPConsoleProject
     {
         private static Dictionary<string, BaseScene> sceneDic; // 베이스 씬 여러게 있는 씬 사전
         private static BaseScene nowScene; // 씬 변경되기 때문에 현재씬 구동
+        public static string prevSceneName; // 현재씬뿐아니라 이전 씬이름으로 까지
 
         private static Player player;
 
@@ -44,7 +45,11 @@ namespace OOPConsoleProject
 
         public static void ChangeScene(string sceneName) // 씬을 바꿔주는 기능 구현
         {
+            prevSceneName = nowScene.name; // 이전씬의 이름을 이름으로 설정
+
+            nowScene.Exit(); // 나가기
             nowScene = sceneDic[sceneName]; // 해당이름 씬으로 넘어가기 위해
+            nowScene.Enter(); // 들어가기
         }
 
         private static void Start() // 게임 초기 설정 작업
@@ -63,7 +68,7 @@ namespace OOPConsoleProject
             sceneDic.Add("Chapter_1_2", new Chapter_1_2());
             sceneDic.Add("FallTent", new FallTent());
             sceneDic.Add("OutTent1", new OutTent1());
-
+            sceneDic.Add("Cave", new Cave());
 
 
             nowScene = sceneDic["Title"]; // 시작시 타이틀씬으로 시작

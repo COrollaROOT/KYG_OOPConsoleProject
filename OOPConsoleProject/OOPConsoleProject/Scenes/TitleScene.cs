@@ -8,6 +8,12 @@ namespace OOPConsoleProject.Scenes
 {
     public class TitleScene : BaseScene // 추상클래스를 상속받는 클래스 구현
     {
+
+        public TitleScene()
+        {
+            name = "Title";
+        }
+
         public override void Render() // 씬 그리기 처리
         {
             Console.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");

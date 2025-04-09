@@ -11,6 +11,8 @@ namespace OOPConsoleProject.Scenes
 
         private ConsoleKey input;
 
+        
+
         public override void Render()
         {
             Console.WriteLine("따스한 햇살이 ");
