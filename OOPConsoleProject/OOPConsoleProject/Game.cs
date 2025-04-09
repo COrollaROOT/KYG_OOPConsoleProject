@@ -58,9 +58,13 @@ namespace OOPConsoleProject
             sceneDic.Add("Title", new TitleScene()); // 씬 사전에 "Title" 이라는 씬 추가
             sceneDic.Add("Chapter_1", new Chapter_1());
             sceneDic.Add("Chapter_2", new Chapter_2());
-            sceneDic.Add("OutTentScene", new OutTentScene());
+            sceneDic.Add("DiedScene1", new DiedScene1());
+            sceneDic.Add("Chapter_1_1", new Chapter_1_1());
+            sceneDic.Add("Chapter_1_2", new Chapter_1_2());
+            sceneDic.Add("FallTent", new FallTent());
+            sceneDic.Add("OutTent1", new OutTent1());
 
-            
+
 
             nowScene = sceneDic["Title"]; // 시작시 타이틀씬으로 시작
 

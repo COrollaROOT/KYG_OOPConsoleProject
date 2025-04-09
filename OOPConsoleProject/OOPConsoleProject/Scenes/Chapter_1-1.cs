@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace OOPConsoleProject.Scenes
 {
-    public class Chapter_1 : BaseScene
+    class Chapter_1_1 : BaseScene
     {
+        
 
         private ConsoleKey input;
 
         public override void Render()
         {
-            Console.WriteLine("따스한 햇살이 ");
-            Console.WriteLine("나가자");
+            Console.WriteLine("결국 아무것도 얻지 못했다");
             Console.WriteLine();
             Console.Write("선택지를 입력하세요 : ");
             Console.WriteLine(" 1. 텐트 안에 있는다  2. 텐트 밖으로 나간다");
@@ -27,7 +27,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Update()
         {
-            
+
         }
 
         public override void Result()
@@ -36,7 +36,7 @@ namespace OOPConsoleProject.Scenes
             {
                 case ConsoleKey.D1:
                     Util.PushKey("텐트 안에 남았습니다.");
-                    Game.ChangeScene("Chapter_1_1");
+                    Game.ChangeScene("Chapter_1_2");
                     break;
 
                 case ConsoleKey.D2:
@@ -47,3 +47,5 @@ namespace OOPConsoleProject.Scenes
         }
     }
 }
+    
+
