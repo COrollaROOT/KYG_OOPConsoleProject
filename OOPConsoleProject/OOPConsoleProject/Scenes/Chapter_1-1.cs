@@ -1,23 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOPConsoleProject.Scenes
+﻿namespace OOPConsoleProject.Scenes
 {
     class Chapter_1_1 : BaseScene
     {
-        
+
 
         private ConsoleKey input;
 
         public override void Render()
         {
-            Console.WriteLine("결국 아무것도 얻지 못했다");
+            Console.WriteLine("!우!!직!");
+            Console.WriteLine("불길한 소리가 뒤에 들리더니 이내 시야가 빠르게 변해갔다");
+            Console.WriteLine("'아..이런..이대로 죽는건가..'\n몸이 마치 중력에 굴복하듯 하염없이 떨어지고 있었다.");
+            Console.WriteLine("'아냐 정신 차려 이대로 죽을순 없어'");
+            Console.WriteLine("그 순간 시간이 느리게 흘러가는듯 했다");
+            Console.WriteLine("그때 눈에 무엇인가 보인다.");
             Console.WriteLine();
             Console.Write("선택지를 입력하세요 : ");
-            Console.WriteLine(" 1. 텐트 안에 있는다  2. 텐트 밖으로 나간다");
+            Console.WriteLine(" 1. 나무줄기를 잡는다 , 2. 나뭇대를 잡는다");
         }
 
         public override void Input()
@@ -35,17 +34,14 @@ namespace OOPConsoleProject.Scenes
             switch (input)
             {
                 case ConsoleKey.D1:
-                    Util.PushKey("텐트 안에 남았습니다.");
-                    Game.ChangeScene("Chapter_1_2");
+                    Util.PushKey("나무줄기를 잡았습니다.");
+                    Game.ChangeScene("DiedScene2");
                     break;
-
                 case ConsoleKey.D2:
-                    Util.PushKey("텐트 밖 으로 이동합니다.");
-                    Game.ChangeScene("OutTent1");
+                    Util.PushKey("나뭇대를 잡았습니다.");
+                    Game.ChangeScene("FallTent");
                     break;
             }
         }
     }
 }
-    
-

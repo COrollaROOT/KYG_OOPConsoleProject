@@ -12,11 +12,13 @@ namespace OOPConsoleProject.Scenes
 
         public override void Render()
         {
-            
-            Console.WriteLine("죽었습니다");
+            Console.WriteLine("꼬르륵...");            
+            Console.WriteLine("배가 고파...그때 나가서 먹을걸 구해올걸...");
+            Console.WriteLine("이대로... 나는... 짐승들의 밥이...ㄷ..ㅚ..게..ㅈ");
+            Console.WriteLine("당신은 굶어 죽었습니다");
+           
             Console.WriteLine();
-            Console.Write("선택지를 입력하세요 : ");
-            Console.WriteLine(" 1.네   2. 아니요");
+            
         }
 
         public override void Input()
@@ -31,18 +33,15 @@ namespace OOPConsoleProject.Scenes
 
         public override void Result()
         {
-            switch (input)
-            {
-                case ConsoleKey.D1:
-                    Util.PushKey("다시 시작합니다.");
-                    Game.ChangeScene("Chapter_1_2");
-                    break;
+            
 
-                case ConsoleKey.D2:
-                    Util.PushKey("종료합니다");
-                    Game.ChangeScene("Title");
-                    break;
-            }
-        }
+            Console.Clear();
+            Console.WriteLine("게임이 종료되었습니다.");
+            Console.WriteLine("아무 키나 누르면 프로그램이 종료됩니다.");
+            Console.ReadKey(true); // 사용자 키 입력 대기
+            Environment.Exit(0); // 콘솔 창 종료
+
+        
+    }
     }
 }

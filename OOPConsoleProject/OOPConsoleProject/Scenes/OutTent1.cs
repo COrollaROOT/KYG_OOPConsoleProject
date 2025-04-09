@@ -39,7 +39,7 @@ namespace OOPConsoleProject.Scenes
             }
 
             gameObjects = new List<GameObject>();
-            gameObjects.Add(new Place("Chapter_1_1", 'T', new Vector0(1, 1)));
+            gameObjects.Add(new Place("DiedScene1", 'T', new Vector0(1, 1)));
             gameObjects.Add(new Place("Chapter_2", 'F', new Vector0(12, 2)));
 
             Game.Player.position = new Vector0(1, 1); // 플레잉어 위치 선정
