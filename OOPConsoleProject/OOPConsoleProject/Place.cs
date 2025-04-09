@@ -9,7 +9,8 @@ namespace OOPConsoleProject
     public class Place : GameObject
     {
         private string scene;
-        public Place(string scene, char symbol, Vector0 position) : base(ConsoleColor.Yellow, symbol, position)
+        public Place(string scene, char symbol, Vector0 position)
+            : base(ConsoleColor.Yellow, symbol, position)
 
         {
             this.scene = scene;

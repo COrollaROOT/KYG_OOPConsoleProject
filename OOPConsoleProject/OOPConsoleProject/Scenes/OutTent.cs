@@ -13,6 +13,8 @@ namespace OOPConsoleProject.Scenes
         private string[] mapData;
         private bool[,] map; // 맵 구성
 
+        private List<GameObject> gameObjects;
+
         public OutTentScene()
         {
             mapData = new string[]
@@ -36,6 +38,9 @@ namespace OOPConsoleProject.Scenes
                 }
             }
 
+            gameObjects = new List<GameObject>();
+            gameObjects.Add(new Place("Chapter_2", 'T', new Vector0(1, 1)));
+
             Game.Player.position = new Vector0(1, 1); // 플레잉어 위치 선정
             Game.Player.map = map;
         }
@@ -44,6 +49,10 @@ namespace OOPConsoleProject.Scenes
         public override void Render()
         {
             PrintMap(); // 맵 그려준다
+            foreach (GameObject obj in gameObjects)
+            {
+                obj.Print(); // 게임 오브젝트 그려주기
+            }
             Game.Player.Print(); // 플레이어 그려준다
         }
 
