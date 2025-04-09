@@ -29,6 +29,10 @@ namespace OOPConsoleProject.Scenes
 
             Console.SetCursorPosition(0, map.GetLength(0) + 2); // 맵 생성시 
             Game.Player.inventory.PrintALL(); // 인벤토리도 구현
+
+            Console.WriteLine("'저기에 먹을게(F) 있을거 같은데 한번 가볼까?");
+
+
         }
 
         public override void Input() // 키를 입력받아
