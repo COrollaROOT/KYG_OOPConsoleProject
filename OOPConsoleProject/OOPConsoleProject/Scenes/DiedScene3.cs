@@ -28,11 +28,11 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(3500);
             Console.WriteLine("그렇게\n한입을\n베어 먹었다");
             Thread.Sleep(3500);
-            Console.WriteLine("그순가 ㄷ ㅏ시 따에 떨어지and거 같피 저시니 혼미해졌다.하염업히 ㅋㅋ ww 우음이 난다.");
+            Console.WriteLine("그순가 ㄷ ㅏ시 따에 떨어지and거 같피 저시니 혼MI해다.하염업히 ㅋㅋ ww 우음이 난다.");
             Thread.Sleep(3500);
-            Console.WriteLine("온모미 Mushroom에 압도 되듯 마bi 되었고\n이후 ㅍ와 체액기 버섯을 피하듯 뿜어져 나왔다");
+            Console.WriteLine("온모미 Mushroom에 압도 되듯 마bi 되었고\n이후 ㅍ와 체액기 Mush섯을 P하듴 푸져 나아다!@!");
             Thread.Sleep(3500);
-            Console.WriteLine("그렇게 나는 주위의 버섯들과 이웃이 되었다");
+            Console.WriteLine("그렇게 당신은 주위의 버섯들과 이웃이 되었다");
             Thread.Sleep(3500);
 
             Console.WriteLine();

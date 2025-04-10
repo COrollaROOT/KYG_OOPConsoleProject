@@ -15,7 +15,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Render()
         {
-            Console.WriteLine("따스한 햇빛이 나의 눈을 덮는다\n나는 눈을 천천히 뜬다");
+            Console.WriteLine("따스한 햇빛이 나의 눈을 덮는다\n나는 눈을 천천히 뜬다.");
             Thread.Sleep(1500);
             Console.WriteLine("눈앞엔 고요하고 드넓은 산림이 펼쳐져 있다.\n바람에 풀잎이 일렁이고\n멀리선 새소리가 아련하게 들린다.");
             Thread.Sleep(1500);
@@ -27,11 +27,11 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(1500);
             Console.WriteLine("그렇게 한참을 감상에 빠져 있다 보니, 갑작스레 '꼬르륵' 소리가 뱃속에서 울려 퍼진다.");
             Thread.Sleep(1500);
-            Console.WriteLine("'...이런, 좀 배가 고픈걸. 어제부터 뭘 제대로 못 먹었지.'");
+            Console.WriteLine("'...이런, 좀 배가 고픈걸. 어제부터 뭘 제대로 못 먹었지..'");
             Thread.Sleep(1500);
             Console.WriteLine("주위를 살펴보지만 가지고 있던 식량은 다 떨어졌다.");
             Thread.Sleep(1500);
-            Console.WriteLine("'쳇, 나가서 또 구해 와야겠네. 귀찮게…'");
+            Console.WriteLine("'쳇, 나가서 또 구해 와야겠네. 귀찮게...'");
             Thread.Sleep(1500);
 
             Console.WriteLine();

@@ -23,15 +23,15 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(3500);
             Console.WriteLine("나는...");
             Thread.Sleep(3500);
-            Console.WriteLine("그렇게 생각했다");
+            Console.WriteLine("그렇게 생각했다.");
             Thread.Sleep(3500);
             Console.WriteLine("등을 돌아 뛰려는 순간...");
             Thread.Sleep(3500);
             Console.WriteLine("이미 검은 늑대는 나의 등을 칼날같은 손톱으로 공격하였고");
             Thread.Sleep(3500);
-            Console.WriteLine("나의 목을 물어 한번에 부러트렸고");
+            Console.WriteLine("나의 목을 물어 한번에 부러트렸다.");
             Thread.Sleep(3500);
-            Console.WriteLine("나의 다리는 이미 떨어져 나가 있었다");
+            Console.WriteLine("나의 다리는 이미 떨어져 나가 있었다.");
             Thread.Sleep(3500);
             Console.WriteLine("나는 축처진 머리로 그렇게 나의 다리였던것을\n아득해지는 정신으로 보면서 서서히 동굴 깊은곳으로 사라져 갔다.");
             Thread.Sleep(3500);

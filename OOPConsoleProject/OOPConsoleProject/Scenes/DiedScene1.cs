@@ -43,6 +43,7 @@ namespace OOPConsoleProject.Scenes
 
             Console.Clear();
             Console.WriteLine("게임이 종료되었습니다.");
+            Console.WriteLine("플레이 해주셔서 감사합니다.");
             Console.WriteLine("아무 키나 누르면 프로그램이 종료됩니다.");
             Console.ReadKey(true); // 사용자 키 입력 대기
             Environment.Exit(0); // 콘솔 창 종료

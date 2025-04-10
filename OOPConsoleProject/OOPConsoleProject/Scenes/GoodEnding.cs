@@ -13,17 +13,17 @@ namespace OOPConsoleProject.Scenes
         {
             Console.WriteLine("'그래 정신만 차리면 살수있어'");
             Thread.Sleep(3500);
-            Console.WriteLine("이내 정신을 다잡고 공격할 태새를 잡았다");
+            Console.WriteLine("이내 정신을 다잡고 공격할 태새를 잡았다.");
             Thread.Sleep(3500);
-            Console.WriteLine("검은 늑대가 날카로운 손톱이 덮쳐든다");
+            Console.WriteLine("검은 늑대가 날카로운 손톱이 덮쳐든다.");
             Thread.Sleep(3500);
             Console.WriteLine("미쳐 피할새도 없이 빠른 공격이였다.손톱은 나의 다리를 크게 훍고 지나갔다.");
             Thread.Sleep(3500);
             Console.WriteLine("아픔이 느껴졌지만 아픔을 느낄 겨를이 없었다. 늑대는 다음 공격을 준비하고 있었다.");
             Thread.Sleep(3500);
-            Console.WriteLine("곧 재빠른 이빨이 나의 목을 덮쳐 왔지만 간신히 피해 목덜미는 내어주지 않았다");
+            Console.WriteLine("곧 재빠른 이빨이 나의 목을 덮쳐 왔지만 간신히 피해 목덜미는 내어주지 않았다.");
             Thread.Sleep(3500);
-            Console.WriteLine("이내 목덜미를 빚나간 이빨은 나의 어깨에 박혔다");
+            Console.WriteLine("이내 목덜미를 빚나간 이빨은 나의 어깨에 박혔다.");
             Thread.Sleep(3500);
             Console.WriteLine("그 찰나의 순간 상대가 놓친 기회는 나의 기회가 되었다");
             Thread.Sleep(3500);
