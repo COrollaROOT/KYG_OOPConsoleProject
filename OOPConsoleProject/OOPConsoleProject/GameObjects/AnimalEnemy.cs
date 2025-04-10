@@ -14,7 +14,7 @@ namespace OOPConsoleProject.GameObjects
 
         public override void Interact(Player player)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
