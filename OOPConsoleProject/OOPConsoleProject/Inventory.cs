@@ -140,7 +140,7 @@ namespace OOPConsoleProject
             {
                 case ConsoleKey.Y:
                     selectItem.Use();
-                    Util.PushKey($"{selectItem.name} 을/를 사용합니다");
+                    Util.PushKey($"{selectItem.name} 을/를 사용했습니다");
                     Remove(selectItem);
                     stack.Pop();
                     break;
@@ -161,6 +161,7 @@ namespace OOPConsoleProject
             for (int i = 0; i < items.Count; i++)
             {
                 Console.WriteLine("{0}. {1}", i + 1, items[i].name);
+                Console.WriteLine($"- {items[i].description}");
             }
             Console.WriteLine("-------------------------");
         }

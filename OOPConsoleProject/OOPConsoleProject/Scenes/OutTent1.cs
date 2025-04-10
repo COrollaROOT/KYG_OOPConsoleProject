@@ -53,7 +53,8 @@ namespace OOPConsoleProject.Scenes
         {
            
             base.Render();
-            Console.WriteLine("저기에 음식(F)이 있네\n한번 가볼까?");
+            Console.WriteLine("'저기에 음식(F)이 있네\n한번 가볼까?'");
+            Console.WriteLine();
             Console.WriteLine("방향키로 움직이시오");
             Console.WriteLine("I : 인벤토리");
 

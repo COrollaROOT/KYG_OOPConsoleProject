@@ -12,8 +12,8 @@ namespace OOPConsoleProject.GameObjects
         public string name; // 아이템 이름
         public string description; // 아이템 설명
 
-        public Item(char symbol, Vector0 position)
-            : base(ConsoleColor.Blue, symbol, position, true)
+        public Item(ConsoleColor color,char symbol, Vector0 position)
+            : base(color, symbol, position, true)
         {
         }
 

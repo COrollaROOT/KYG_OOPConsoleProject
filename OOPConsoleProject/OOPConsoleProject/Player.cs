@@ -21,7 +21,7 @@ namespace OOPConsoleProject
         {
             inventory = new Inventory();
             maxHp = 100; // 플레이어 체력 설정
-            nowHp = maxHp;
+            nowHp = 90;
         }
 
         public void Heal(int amount) // 체력 회복시 설정

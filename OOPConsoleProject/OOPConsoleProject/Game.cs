@@ -62,10 +62,11 @@ namespace OOPConsoleProject
             sceneDic = new Dictionary<string, BaseScene>(); // 씬 설정
             sceneDic.Add("Title", new TitleScene()); // 씬 사전에 "Title" 이라는 씬 추가
             sceneDic.Add("Chapter_1", new Chapter_1());
-            sceneDic.Add("Chapter_2", new Chapter_2());
+            sceneDic.Add("DiedScene3", new DiedScene3());
             sceneDic.Add("DiedScene1", new DiedScene1());
             sceneDic.Add("DiedScene2", new DiedScene2());
             sceneDic.Add("Chapter_1_1", new Chapter_1_1());
+            sceneDic.Add("Chapter_2", new Chapter_2());
             sceneDic.Add("Chapter_1_2", new Chapter_1_2());
             sceneDic.Add("FallTent", new FallTent());
             sceneDic.Add("OutTent1", new OutTent1());
