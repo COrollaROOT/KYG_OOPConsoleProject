@@ -32,7 +32,7 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(3500);
             Console.WriteLine("'엄마 여기봐바 엄청 이쁜 동물이 있어!!'");
             Thread.Sleep(3500);
-            Console.WriteLine("그렇게 당신은 우리안의 '갇힌' 야생이 되었습니다");
+            Console.WriteLine("그렇게 당신은 '우리'의 야생이 되었습니다.");
             Thread.Sleep(3500);
 
             Console.WriteLine();

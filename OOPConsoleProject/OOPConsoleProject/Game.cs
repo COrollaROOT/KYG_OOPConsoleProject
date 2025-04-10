@@ -71,6 +71,8 @@ namespace OOPConsoleProject
             sceneDic.Add("FallTent", new FallTent());
             sceneDic.Add("OutTent1", new OutTent1());
             sceneDic.Add("Cave", new Cave());
+            sceneDic.Add("BadEnding", new BadEnding());
+            sceneDic.Add("GoodEnding", new GoodEnding());
 
 
             nowScene = sceneDic["Title"]; // 시작시 타이틀씬으로 시작

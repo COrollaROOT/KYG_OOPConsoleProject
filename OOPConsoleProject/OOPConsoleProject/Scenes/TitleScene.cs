@@ -20,7 +20,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("▒§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§▒");
             Console.WriteLine("▒♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣▒");
             Console.WriteLine("▒▒▒♣♣♣♣※※     Rewild    ※※♣♣♣♣▒▒▒");
-            Console.WriteLine("▒▒▒♣♣♣♣※※-우리안의 야생-※※♣♣♣♣▒▒▒");
+            Console.WriteLine("▒▒▒♣♣♣♣※※- 우리의 야생 -※※♣♣♣♣▒▒▒");
             Console.WriteLine("▒♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣▒");
             Console.WriteLine("▒§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§▒");
             Console.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");

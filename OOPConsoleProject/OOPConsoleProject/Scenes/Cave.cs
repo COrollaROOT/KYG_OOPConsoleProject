@@ -37,7 +37,7 @@ namespace OOPConsoleProject.Scenes
             gameObjects.Add(new Place("FallTent", 'C', new Vector0(1, 1)));
             gameObjects.Add(new Place("Chapter_2", 'G', new Vector0(18, 1)));
             gameObjects.Add(new Place("Chapter_1_2", 'B', new Vector0(18, 4)));
-            gameObjects.Add(new Place("FallTent", 'M', new Vector0(15, 1)));            
+            //gameObjects.Add(new Place("FallTent", 'M', new Vector0(15, 1)));            
             gameObjects.Add(new Water(ConsoleColor.Blue, 'W', new Vector0(3, 1)));
 
         }
