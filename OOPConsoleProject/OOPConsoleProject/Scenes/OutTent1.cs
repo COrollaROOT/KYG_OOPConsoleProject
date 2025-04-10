@@ -51,8 +51,10 @@ namespace OOPConsoleProject.Scenes
 
         public override void Render()
         {
-           
+
             base.Render();
+            Console.WriteLine($"-현재 체력 : {Game.Player.NowHp}");
+            Console.WriteLine();
             Console.WriteLine("'저기에 음식(F)이 있네\n한번 가볼까?'");
             Console.WriteLine();
             Console.WriteLine("방향키로 움직이시오");
